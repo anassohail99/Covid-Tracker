@@ -1,0 +1,31 @@
+.global {
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    margin: 0 1% !important;
+}
+
+.Confirmed {
+    background: #271f55d2 !important;
+}
+
+.Recovered {
+    background: green !important;
+}
+
+.Deaths {
+    background: rgba(255, 0, 0, 0.863) !important;
+}
+
+.card2 {
+    margin: 2% 2% 2% 2% !important;
+    /* background: #271F55 !important; */
+    color: #fff !important;
+}
+
+.cardContent {
+    margin: 3% 2% !important;
+
+}

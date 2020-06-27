@@ -1,6 +1,7 @@
 import axios from "axios";
 
 const url = "https://covid19.mathdro.id/api";
+const url2 = "https://covid-19.dataflowkit.com/v1/pakistan";
 
 export const fetchData = async (country) => {
   let countryUrl = url;
@@ -25,20 +26,31 @@ export const fetchData2 = async () => {
       data: {
         Global: {
           NewConfirmed,
-          TotalConfired,
+          TotalConfirmed,
           NewDeaths,
           TotalDeaths,
+          NewRecovered,
           TotalRecovered,
         },
       },
     } = await axios.get("https://api.covid19api.com/summary");
     return {
       NewConfirmed,
-      TotalConfired,
+      TotalConfirmed,
       NewDeaths,
       TotalDeaths,
+      NewRecovered,
       TotalRecovered,
     };
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const fetchData3 = async () => {
+  try {
+    const { data } = await axios.get(url2);
+    console.log(data);
   } catch (error) {
     console.log(error);
   }

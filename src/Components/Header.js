@@ -4,7 +4,7 @@ import "../App.css";
 const Header = () => {
   return (
     <div>
-      <h1 className="heading"> GLOABL CONDITION OF COVID-19</h1>
+      <h1 className="heading"> GLOBAL CONDITION OF COVID-19</h1>
     </div>
   );
 };

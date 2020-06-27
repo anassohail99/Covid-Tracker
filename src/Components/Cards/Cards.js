@@ -3,11 +3,13 @@ import { Card, CardContent, Typography, Grid } from "@material-ui/core";
 import CountUp from "react-countup";
 import styles from "./Cards.module.css";
 import cx from "classnames";
+// import loader from "../assets/loader.gif";
 
 const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
   if (!confirmed) {
-    return <h1>Loading</h1>;
+    return <h2>Getting Data...</h2>;
   }
+  // console.log(confirmed);
   return (
     <React.Fragment>
       <div className={styles.container}>

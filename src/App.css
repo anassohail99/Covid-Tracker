@@ -41,3 +41,7 @@ body {
   text-align: center;
   margin: 7% 0;
 }
+
+.card2 {
+  overflow: hidden;
+}

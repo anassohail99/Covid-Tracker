@@ -3,13 +3,18 @@ import { Card, CardContent, Typography, Grid } from "@material-ui/core";
 import CountUp from "react-countup";
 import styles from "./Cards2.module.css";
 import cx from "classnames";
-// import loader from "../assets/loader.gif";
+import loader from "../assets/Rolling-1s-200px.gif";
 
 const Cards3 = ({
   data: { activeCases, newCases, newDeaths, totalCases, totalDeath, recovered },
 }) => {
   if (!activeCases) {
-    return <h2>Getting Data...</h2>;
+    return (
+      <h2>
+        {" "}
+        <img src={loader} alt="" srcset="" />
+      </h2>
+    );
   }
   console.log(activeCases);
   return (

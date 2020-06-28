@@ -7,6 +7,10 @@
   font-family: 'Jost', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   background: #e9e8e8;
 }
@@ -33,6 +37,19 @@ body {
   text-align: center;
 }
 
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.Nav {
+  padding: 10px 0 !important;
+}
+
+.covid {
+  color: #ec4f4f;
+}
+
 .pie {
   overflow-x: hidden;
 }
@@ -53,6 +70,30 @@ body {
 
 }
 
+
+.footer {
+  background: #271F55;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 3%;
+}
+
+.cont {
+  padding: 7px 0;
+}
+
+.contact a {
+  font-size: 1.5rem;
+  color: #fff !important;
+  padding: 0 5px;
+}
+
+.contact a:hover {
+  color: #ec4f4f !important;
+}
+
 @media (max-width:760px) {
   .btn {
     font-size: 0.8rem !important;
@@ -60,6 +101,16 @@ body {
   }
 
   .heading {
+    padding-top: 18%;
     font-size: 2rem;
+  }
+
+  .Nav {
+    padding: 0px 0 !important;
+  }
+
+  .logo {
+    width: 30px;
+
   }
 }

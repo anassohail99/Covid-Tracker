@@ -30,7 +30,6 @@ const Cards2 = ({
             className={cx(styles.card2, styles.Confirmed)}
           >
             {" "}
-            {/*we use cx to use multiple styles*/}
             <CardContent className={styles.cardContent}>
               <Typography gutterBottom>New Confirmed</Typography>
               <Typography variant="h5">
@@ -41,11 +40,9 @@ const Cards2 = ({
                   separator=","
                 />
               </Typography>
-              {/* <Typography variant="h5">
-                {new Date(lastUpdate).toDateString()}
-              </Typography> */}
+              {/* <Typography variant="h5">{Date.Now().toDateString()}</Typography> */}
               <Typography variant="body2">
-                Number of Confirmed Cases of COVID-19{" "}
+                Number of New Confirmed Cases of COVID-19{" "}
               </Typography>
             </CardContent>
           </Grid>
@@ -67,7 +64,7 @@ const Cards2 = ({
                 {new Date(lastUpdate).toDateString()}
               </Typography> */}
               <Typography variant="body2">
-                Number of Confirmed Cases of COVID-19{" "}
+                Number of New Deaths From COVID-19{" "}
               </Typography>
             </CardContent>
           </Grid>
@@ -94,7 +91,7 @@ const Cards2 = ({
                 {new Date(lastUpdate).toDateString()}
               </Typography> */}
               <Typography variant="body2">
-                Number of Confirmed Cases of COVID-19{" "}
+                Number of Recoveries From COVID-19{" "}
               </Typography>
             </CardContent>
           </Grid>
@@ -121,7 +118,7 @@ const Cards2 = ({
                 {new Date(lastUpdate).toDateString()}
               </Typography> */}
               <Typography variant="body2">
-                Number of Confirmed Cases of COVID-19{" "}
+                Number of Total Confirmed Cases of COVID-19{" "}
               </Typography>
             </CardContent>
           </Grid>
@@ -148,7 +145,7 @@ const Cards2 = ({
                 {new Date(lastUpdate).toDateString()}
               </Typography> */}
               <Typography variant="body2">
-                Number of Confirmed Cases of COVID-19{" "}
+                Number of Total Deaths From COVID-19{" "}
               </Typography>
             </CardContent>
           </Grid>
@@ -175,7 +172,7 @@ const Cards2 = ({
                 {new Date(lastUpdate).toDateString()}
               </Typography> */}
               <Typography variant="body2">
-                Number of Confirmed Cases of COVID-19{" "}
+                Number of Total Deaths From COVID-19{" "}
               </Typography>
             </CardContent>
           </Grid>

@@ -3,7 +3,7 @@ import { Card, CardContent, Typography, Grid } from "@material-ui/core";
 import CountUp from "react-countup";
 import styles from "./Cards2.module.css";
 import cx from "classnames";
-// import loader from "../assets/loader.gif";
+import loader from "../assets/Rolling-1s-200px.gif";
 
 const Cards2 = ({
   data: {
@@ -16,7 +16,12 @@ const Cards2 = ({
   },
 }) => {
   if (!NewConfirmed) {
-    return <h2 style={{ color: "#000" }}>Getting Data...</h2>;
+    return (
+      <h2>
+        {" "}
+        <img src={loader} alt="" srcset="" />
+      </h2>
+    );
   }
   return (
     <React.Fragment>

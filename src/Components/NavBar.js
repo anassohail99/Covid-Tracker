@@ -8,6 +8,7 @@ import IconButton from "@material-ui/core/IconButton";
 import "../App.css";
 import About from "./About/About";
 import Home from "./Home/Home";
+import Country from "./Country/Country";
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
@@ -47,16 +48,14 @@ export default function ButtonAppBar() {
             <Link className="btn" to="/about">
               About
             </Link>
-            <Link className="btn" to="/about">
-              Stats
-            </Link>{" "}
-            <Link className="btn" to="/about">
+            <Link className="btn" to="/country">
               Country
             </Link>{" "}
           </Toolbar>
         </AppBar>
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
+        <Route exact path="/country" component={Country} />
       </Router>
     </div>
   );

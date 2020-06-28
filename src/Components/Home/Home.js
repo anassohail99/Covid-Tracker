@@ -5,6 +5,7 @@ import { fetchData2 } from "../../api/index";
 import { fetchData3 } from "../../api/index";
 import Cards from "../Cards/Cards";
 import Cards2 from "../Cards/Cards2";
+import Cards3 from "../Cards/Cards3";
 import Header from "../Header";
 
 import Pie from "../Pie/Pie";
@@ -55,11 +56,15 @@ export default class Home extends Component {
           </div>
         </div>
         <div className="card2">
-          <h2 style={{ color: "#000", margin: "5% 0" }}>GLOBAL DATA</h2>
+          <h2 style={{ color: "#000", margin: "5% 0" }}>GLOBAL COVID DATA</h2>
           <Cards2 data={data2} />
 
           {/* <h2 style={{ color: "#000", margin: "5% 0" }}>PAKISTAN DATA</h2> */}
           {/* <Cards2 data={pakistanData2} /> */}
+        </div>
+        <div className="card2">
+          <h2 style={{ color: "#000", margin: "5% 0" }}>PAKISTAN COVID DATA</h2>
+          <Cards3 data={pakistanData2} />
         </div>
       </div>
     );

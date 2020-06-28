@@ -3,6 +3,7 @@ import { Card, CardContent, Typography, Grid } from "@material-ui/core";
 import CountUp from "react-countup";
 import styles from "./Cards.module.css";
 import cx from "classnames";
+// import loader from "../assets/Rolling-1s-200px (2).gif";
 // import loader from "../assets/loader.gif";
 
 const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Doughnut } from "react-chartjs-2";
 import { fetchDailyData } from "../../api/index";
+import loader from "../assets/Rolling-1s-200px.gif";
 
 const Pie = ({ data: { confirmed, recovered, deaths } }) => {
   const [dailyData, setDailyData] = useState([]);
@@ -10,7 +11,7 @@ const Pie = ({ data: { confirmed, recovered, deaths } }) => {
     };
     fetchAPI();
   }, []);
-
+  console.log(dailyData);
   const pie = confirmed ? (
     <Doughnut
       data={{
@@ -27,7 +28,14 @@ const Pie = ({ data: { confirmed, recovered, deaths } }) => {
         },
       }}
     />
-  ) : null;
+  ) : (
+    // <div className={styles.load}>
+    <h2>
+      {" "}
+      <img src={loader} alt="" srcset="" />
+    </h2>
+    // </div>
+  );
 
   return <div>{pie}</div>;
 };

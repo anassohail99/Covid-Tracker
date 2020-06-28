@@ -1,0 +1,111 @@
+.background {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/covid.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+    overflow: hidden;
+}
+
+.content1 {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 7% 0 10% 5%;
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    color: #fff;
+}
+
+.content1 h1 {
+    font-size: 3rem;
+}
+
+.content1 h5 {
+    line-height: 1.5;
+}
+
+.contentInside {
+    /* background: rgba(0, 0, 0, 0.7); */
+    text-align: left;
+    /* font-size: 3rem !important; */
+    padding: 15px 0;
+}
+
+
+
+
+.contentInside span {
+    color: #ec4f4f;
+}
+
+.content1 button,
+.content3 button {
+    padding: 15px 25px !important;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    color: #fff;
+    background: #271F55;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.content1 button:hover,
+.content3 button:hover {
+    color: #271F55;
+    background: #fff;
+}
+
+.content2 {
+    background: #110a3b;
+    padding: 5% 0;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+
+.content2Inside {
+    padding: 0 15%;
+    line-height: 2;
+}
+
+.content2Inside span {
+    color: #ec4f4f;
+}
+
+.content3 {
+    overflow: hidden;
+    margin: 5% 0;
+}
+
+.content3Inside {
+    padding-top: 15%;
+}
+
+.content3Inside h4 {
+    line-height: 1.5;
+    padding: 10px 0;
+    font-size: 1.3rem;
+}
+
+.content3 img {
+    overflow-y: hidden;
+}
+
+
+@media screen and (max-width:760px) {
+    .content1 h1 {
+        font-size: 2rem;
+    }
+
+    .content1 h5 {
+        font-size: 1.2rem;
+    }
+
+    .content3 img {
+        width: 90%;
+        height: auto;
+    }
+}

@@ -62,7 +62,15 @@ export const fetchData3 = async () => {
     const totalCases = dataArray[dataLength - 3];
     const totalDeath = dataArray[dataLength - 2];
     const recovered = dataArray[dataLength - 1];
-    return activeCases, newCases, newDeaths, totalCases, totalDeath, recovered;
+    console.log(data);
+    return {
+      activeCases,
+      newCases,
+      newDeaths,
+      totalCases,
+      totalDeath,
+      recovered,
+    };
     // return dataArray;
   } catch (error) {
     console.log(error);

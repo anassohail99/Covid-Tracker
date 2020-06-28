@@ -5,6 +5,7 @@ import { fetchData2 } from "../../api/index";
 import { fetchData3 } from "../../api/index";
 import Cards from "../Cards/Cards";
 import Cards2 from "../Cards/Cards2";
+import Header from "../Header";
 
 import Pie from "../Pie/Pie";
 
@@ -13,23 +14,30 @@ export default class Home extends Component {
     data: {},
     pakistanData: {},
     data2: {},
+    pakistanData2: {},
   };
 
   async componentDidMount() {
     const fetch_data = await fetchData();
     const fetch_data2 = await fetchData("pakistan");
     const fetch_data3 = await fetchData2();
+    const fetch_data4 = await fetchData3();
     this.setState({ data: fetch_data });
     this.setState({ pakistanData: fetch_data2 });
     this.setState({ data2: fetch_data3 });
+    this.setState({ pakistanData2: fetch_data4 });
   }
 
   render() {
+    // console.log(this.state.pakistanData2);
     // console.log(this.state.data2);
-    const { data, pakistanData, data2 } = this.state;
+    const { data, pakistanData, data2, pakistanData2 } = this.state;
     return (
       <div className="App">
+        {/* <div className="header">
+        </div> */}
         <div className="header">
+          <Header />
           <div className="cards">
             <Cards data={data} />
           </div>
@@ -49,6 +57,9 @@ export default class Home extends Component {
         <div className="card2">
           <h2 style={{ color: "#000", margin: "5% 0" }}>GLOBAL DATA</h2>
           <Cards2 data={data2} />
+
+          {/* <h2 style={{ color: "#000", margin: "5% 0" }}>PAKISTAN DATA</h2> */}
+          {/* <Cards2 data={pakistanData2} /> */}
         </div>
       </div>
     );

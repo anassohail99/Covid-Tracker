@@ -34,6 +34,7 @@ export const fetchData2 = async () => {
         },
       },
     } = await axios.get("https://api.covid19api.com/summary");
+    // console.log({ NewConfirmed });
     return {
       NewConfirmed,
       TotalConfirmed,
@@ -49,8 +50,20 @@ export const fetchData2 = async () => {
 
 export const fetchData3 = async () => {
   try {
-    const { data } = await axios.get(url2);
-    console.log(data);
+    // const { data } = await axios.get(url2);
+    // console.log(data);
+    const url = url2;
+    const data = await axios.get(url);
+    const dataArray = await Object.values(data.data);
+    const dataLength = dataArray.length;
+    const activeCases = dataArray[0];
+    const newCases = dataArray[3];
+    const newDeaths = dataArray[4];
+    const totalCases = dataArray[dataLength - 3];
+    const totalDeath = dataArray[dataLength - 2];
+    const recovered = dataArray[dataLength - 1];
+    return activeCases, newCases, newDeaths, totalCases, totalDeath, recovered;
+    // return dataArray;
   } catch (error) {
     console.log(error);
   }

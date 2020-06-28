@@ -45,3 +45,21 @@ body {
 .card2 {
   overflow: hidden;
 }
+
+.btn {
+  color: #fff !important;
+  /* text-decoration: none !important;*/
+  font-size: 1.2rem !important;
+
+}
+
+@media (max-width:760px) {
+  .btn {
+    font-size: 0.8rem !important;
+
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+}

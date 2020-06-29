@@ -1,0 +1,64 @@
+.countryHeader {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../assets/11.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.content1 {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 7% 0 10% 0;
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    color: #fff;
+}
+
+.content1 h1 {
+    font-size: 3rem;
+}
+
+.content1 h5 {
+    line-height: 1.5;
+}
+
+.contentInside {
+    /* background: rgba(0, 0, 0, 0.7); */
+    text-align: center;
+    /* font-size: 3rem !important; */
+    padding: 15px 0;
+}
+
+
+
+
+.contentInside span {
+    color: #ec4f4f;
+}
+
+.countrycontent {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.picker {
+    padding: 5% 0%;
+}
+
+.linechart {
+    width: 85%;
+}
+
+
+
+@media (max-width:760px) {
+    .countryHeader {
+        height: 80vh;
+    }
+}

@@ -32,7 +32,7 @@ const Pie = ({ data: { confirmed, recovered, deaths } }) => {
     // <div className={styles.load}>
     <h2>
       {" "}
-      <img src={loader} alt="" srcset="" />
+      <img src={loader} alt="" />
     </h2>
     // </div>
   );

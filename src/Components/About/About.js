@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./About.module.css";
 import Content1 from "./content1";
 import { Content2 } from "./content2";
 import Content3 from "./content3";

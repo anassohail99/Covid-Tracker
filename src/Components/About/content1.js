@@ -15,6 +15,7 @@ const Content1 = () => {
         <a
           href="https://www.who.int/health-topics/coronavirus#tab=tab_1"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <button className={styles.contentInside}>More Information</button>
         </a>

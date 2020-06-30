@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Card, CardContent, Typography, Grid } from "@material-ui/core";
 import CountUp from "react-countup";
 import styles from "./Cards2.module.css";
@@ -19,7 +19,7 @@ const Cards2 = ({
     return (
       <h2>
         {" "}
-        <img src={loader} />
+        <img src={loader} alt="" />
       </h2>
     );
   }

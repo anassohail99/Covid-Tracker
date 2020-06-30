@@ -12,7 +12,7 @@ const Cards3 = ({
     return (
       <h2>
         {" "}
-        <img src={loader} alt="" srcset="" />
+        <img src={loader} alt="" />
       </h2>
     );
   }

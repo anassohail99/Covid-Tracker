@@ -63,6 +63,7 @@ export const fetchData3 = async () => {
     const totalDeath = dataArray[dataLength - 2];
     const recovered = dataArray[dataLength - 1];
     console.log(data);
+    console.log(dataArray);
     return {
       activeCases,
       newCases,
@@ -71,17 +72,22 @@ export const fetchData3 = async () => {
       totalDeath,
       recovered,
     };
-    // return dataArray;
   } catch (error) {
     console.log(error);
   }
 };
 
+fetchData3();
+
 export const fetchData4 = async (country) => {
+  const url3 = "https://covid-19.dataflowkit.com/v1";
+  let countryUrl = url3;
+
+  if (country) {
+    countryUrl = `${url3}/${country}`;
+  }
   try {
-    const data = await axios.get(
-      `https://covid-19.dataflowkit.com/v1/${country}`
-    );
+    const data = await axios.get(countryUrl);
     const dataArray = await Object.values(data.data);
     const dataLength = dataArray.length;
     const activeCases = dataArray[0];
@@ -104,6 +110,8 @@ export const fetchData4 = async (country) => {
     console.log(error);
   }
 };
+
+fetchData4();
 
 export const fetchDailyData = async () => {
   try {

@@ -46,7 +46,7 @@ export default function ButtonAppBar() {
               aria-label="menu"
             />
             <Typography variant="h6" className={classes.title}>
-              <img className="logo" src={logo} />
+              <img className="logo" src={logo} alt="" />
               <Link className="btn" to="/">
                 COVID-19 TRACKER
               </Link>{" "}

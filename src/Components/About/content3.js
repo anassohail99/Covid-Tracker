@@ -24,6 +24,7 @@ const content3 = () => {
               <a
                 href="https://www.webmd.com/lung/news/20200228/preparing-for-coronavirus-dos-and-donts"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <button className={styles.contentInside}>
                   More Information

@@ -11,6 +11,7 @@ const Pie = ({ data: { confirmed, recovered, deaths } }) => {
     };
     fetchAPI();
   }, []);
+  console.log(dailyData);
   const pie = confirmed ? (
     <Doughnut
       data={{

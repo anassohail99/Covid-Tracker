@@ -13,7 +13,7 @@ const LineChart = ({ data: { confirmed, recovered, deaths }, country }) => {
 
     fetchAPI();
   }, []);
-  // console.log(dailyData);
+
   // Line chart
 
   const lineChart = dailyData.length ? (
@@ -66,10 +66,7 @@ const LineChart = ({ data: { confirmed, recovered, deaths }, country }) => {
 
   return (
     <div>
-      <div className={styles.Container}>
-        {/* {lineChart} */}
-        {country ? barChat : lineChart}
-      </div>
+      <div className={styles.Container}>{country ? barChat : lineChart}</div>
     </div>
   );
 };

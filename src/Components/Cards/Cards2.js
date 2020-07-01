@@ -45,7 +45,6 @@ const Cards2 = ({
                   separator=","
                 />
               </Typography>
-              {/* <Typography variant="h5">{Date.Now().toDateString()}</Typography> */}
               <Typography variant="body2">
                 Number of New Confirmed Cases of COVID-19{" "}
               </Typography>
@@ -59,15 +58,11 @@ const Cards2 = ({
             className={cx(styles.card2, styles.Deaths)}
           >
             {" "}
-            {/*we use cx to use multiple styles*/}
             <CardContent className={styles.cardContent}>
               <Typography gutterBottom>New Deaths</Typography>
               <Typography variant="h5">
                 <CountUp start={0} end={NewDeaths} duration={2} separator="," />
               </Typography>
-              {/* <Typography variant="h5">
-                {new Date(lastUpdate).toDateString()}
-              </Typography> */}
               <Typography variant="body2">
                 Number of New Deaths From COVID-19{" "}
               </Typography>
@@ -81,7 +76,6 @@ const Cards2 = ({
             className={cx(styles.card2, styles.Recovered)}
           >
             {" "}
-            {/*we use cx to use multiple styles*/}
             <CardContent className={styles.cardContent}>
               <Typography gutterBottom>New Recovered</Typography>
               <Typography variant="h5">
@@ -92,9 +86,6 @@ const Cards2 = ({
                   separator=","
                 />
               </Typography>
-              {/* <Typography variant="h5">
-                {new Date(lastUpdate).toDateString()}
-              </Typography> */}
               <Typography variant="body2">
                 Number of Recoveries From COVID-19{" "}
               </Typography>
@@ -108,7 +99,6 @@ const Cards2 = ({
             className={cx(styles.card2, styles.Confirmed)}
           >
             {" "}
-            {/*we use cx to use multiple styles*/}
             <CardContent className={styles.cardContent}>
               <Typography gutterBottom>Total Confirmed</Typography>
               <Typography variant="h5">
@@ -119,9 +109,6 @@ const Cards2 = ({
                   separator=","
                 />
               </Typography>
-              {/* <Typography variant="h5">
-                {new Date(lastUpdate).toDateString()}
-              </Typography> */}
               <Typography variant="body2">
                 Number of Total Confirmed Cases of COVID-19{" "}
               </Typography>
@@ -135,7 +122,6 @@ const Cards2 = ({
             className={cx(styles.card2, styles.Deaths)}
           >
             {" "}
-            {/*we use cx to use multiple styles*/}
             <CardContent className={styles.cardContent}>
               <Typography gutterBottom>Total Deaths</Typography>
               <Typography variant="h5">
@@ -146,9 +132,6 @@ const Cards2 = ({
                   separator=","
                 />
               </Typography>
-              {/* <Typography variant="h5">
-                {new Date(lastUpdate).toDateString()}
-              </Typography> */}
               <Typography variant="body2">
                 Number of Total Deaths From COVID-19{" "}
               </Typography>
@@ -162,7 +145,6 @@ const Cards2 = ({
             className={cx(styles.card2, styles.Recovered)}
           >
             {" "}
-            {/*we use cx to use multiple styles*/}
             <CardContent className={styles.cardContent}>
               <Typography gutterBottom>Total Recovered</Typography>
               <Typography variant="h5">
@@ -173,9 +155,6 @@ const Cards2 = ({
                   separator=","
                 />
               </Typography>
-              {/* <Typography variant="h5">
-                {new Date(lastUpdate).toDateString()}
-              </Typography> */}
               <Typography variant="body2">
                 Number of Total Deaths From COVID-19{" "}
               </Typography>

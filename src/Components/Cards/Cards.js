@@ -3,14 +3,11 @@ import { Card, CardContent, Typography, Grid } from "@material-ui/core";
 import CountUp from "react-countup";
 import styles from "./Cards.module.css";
 import cx from "classnames";
-// import loader from "../assets/Rolling-1s-200px (2).gif";
-// import loader from "../assets/loader.gif";
 
 const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
   if (!confirmed) {
     return <h2>Getting Data...</h2>;
   }
-  // console.log(confirmed);
   return (
     <React.Fragment>
       <div className={styles.container}>
@@ -23,7 +20,6 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
             className={cx(styles.card, styles.infected)}
           >
             {" "}
-            {/*we use cx to use multiple styles*/}
             <CardContent>
               <Typography gutterBottom>Infected</Typography>
               <Typography variant="h5">

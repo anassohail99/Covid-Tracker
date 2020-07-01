@@ -30,13 +30,9 @@ export default class Home extends Component {
   }
 
   render() {
-    // console.log(this.state.pakistanData2);
-    // console.log(this.state.data2);
     const { data, pakistanData, data2, pakistanData2 } = this.state;
     return (
       <div className="App">
-        {/* <div className="header">
-        </div> */}
         <div className="header">
           <Header />
           <div className="cards">
@@ -58,9 +54,6 @@ export default class Home extends Component {
         <div className="card2">
           <h2 style={{ color: "#000", margin: "5% 0" }}>GLOBAL COVID DATA</h2>
           <Cards2 data={data2} />
-
-          {/* <h2 style={{ color: "#000", margin: "5% 0" }}>PAKISTAN DATA</h2> */}
-          {/* <Cards2 data={pakistanData2} /> */}
         </div>
         <div className="card2">
           <h2 style={{ color: "#000", margin: "5% 0" }}>PAKISTAN COVID DATA</h2>

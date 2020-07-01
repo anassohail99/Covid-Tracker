@@ -16,7 +16,6 @@ const Cards3 = ({
       </h2>
     );
   }
-  console.log(activeCases);
   return (
     // <h1>{data.activeCases}</h1>
     <React.Fragment>

@@ -24,8 +24,7 @@ class Country extends Component {
   };
 
   render() {
-    const { data, country, data2 } = this.state;
-    console.log(data2);
+    const { data, country } = this.state;
     return (
       <React.Fragment>
         <CountryHeader />
@@ -37,7 +36,6 @@ class Country extends Component {
           <div className={styles.linechart}>
             <LineChart data={data} country={country} />
           </div>
-          {/* <ApexLineChart data={data} country={country} /> */}
         </div>
       </React.Fragment>
     );

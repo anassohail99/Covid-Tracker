@@ -11,7 +11,6 @@ const Pie = ({ data: { confirmed, recovered, deaths } }) => {
     };
     fetchAPI();
   }, []);
-  console.log(dailyData);
   const pie = confirmed ? (
     <Doughnut
       data={{
@@ -29,12 +28,10 @@ const Pie = ({ data: { confirmed, recovered, deaths } }) => {
       }}
     />
   ) : (
-    // <div className={styles.load}>
     <h2>
       {" "}
       <img src={loader} alt="" />
     </h2>
-    // </div>
   );
 
   return <div>{pie}</div>;
